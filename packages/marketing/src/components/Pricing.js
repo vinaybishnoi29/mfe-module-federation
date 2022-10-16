@@ -31,32 +31,32 @@ const useStyles = makeStyles((theme) => ({
     ul: {
       margin: 0,
       padding: 0,
-      listStyle: 'none',
-    },
+      listStyle: 'none'
+    }
   },
   toolbar: {
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   },
   toolbarTitle: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   link: {
-    margin: theme.spacing(1, 1.5),
+    margin: theme.spacing(1, 1.5)
   },
   heroContent: {
-    padding: theme.spacing(8, 0, 6),
+    padding: theme.spacing(8, 0, 6)
   },
   cardHeader: {
     backgroundColor:
       theme.palette.type === 'light'
         ? theme.palette.grey[200]
-        : theme.palette.grey[700],
+        : theme.palette.grey[700]
   },
   cardPricing: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'baseline',
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(2)
   },
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,
@@ -65,9 +65,9 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up('sm')]: {
       paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6),
-    },
-  },
+      paddingBottom: theme.spacing(6)
+    }
+  }
 }));
 
 const tiers = [
@@ -78,10 +78,10 @@ const tiers = [
       '10 users included',
       '2 GB of storage',
       'Help center access',
-      'Email support',
+      'Email support'
     ],
     buttonText: 'Sign up for free',
-    buttonVariant: 'outlined',
+    buttonVariant: 'outlined'
   },
   {
     title: 'Pro',
@@ -91,10 +91,10 @@ const tiers = [
       '20 users included',
       '10 GB of storage',
       'Help center access',
-      'Priority email support',
+      'Priority email support'
     ],
     buttonText: 'Get started',
-    buttonVariant: 'contained',
+    buttonVariant: 'contained'
   },
   {
     title: 'Enterprise',
@@ -103,16 +103,16 @@ const tiers = [
       '50 users included',
       '30 GB of storage',
       'Help center access',
-      'Phone & email support',
+      'Phone & email support'
     ],
     buttonText: 'Contact us',
-    buttonVariant: 'outlined',
-  },
+    buttonVariant: 'outlined'
+  }
 ];
 const footers = [
   {
     title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
+    description: ['Team', 'History', 'Contact us', 'Locations']
   },
   {
     title: 'Features',
@@ -121,8 +121,8 @@ const footers = [
       'Random feature',
       'Team feature',
       'Developer stuff',
-      'Another one',
-    ],
+      'Another one'
+    ]
   },
   {
     title: 'Resources',
@@ -130,13 +130,13 @@ const footers = [
       'Resource',
       'Resource name',
       'Another resource',
-      'Final resource',
-    ],
+      'Final resource'
+    ]
   },
   {
     title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-  },
+    description: ['Privacy policy', 'Terms of use']
+  }
 ];
 
 export default function Pricing() {

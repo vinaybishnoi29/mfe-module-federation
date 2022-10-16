@@ -8,9 +8,14 @@ const devConfig = {
   mode: 'development',
   devServer: {
     port: 8081,
-    historyApiFallback: {
-      index: 'index.html'
-    }
+    // historyApiFallback: {
+    //   index: '/index.html'
+    // },
+    historyApiFallback: true
+  },
+  output: {
+    // Need to solve path issue, when nested routes are defined.
+    publicPath: 'http://localhost:8081/'
   },
   plugins: [
     new ModuleFederationPlugin({
